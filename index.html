@@ -723,7 +723,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-xs font-extrabold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest mb-2">Kompetensi Teknik</h2>
-                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Keahlian & Keahlian Pemrograman</h3>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Kemampuan Pemrograman</h3>
                 <div class="w-16 h-1 bg-emerald-600 mx-auto mt-4 rounded-full"></div>
             </div>
 
@@ -738,7 +738,7 @@
                     
                     <div class="space-y-3 text-xs font-medium">
                         <div class="flex justify-between items-center p-2 rounded-lg bg-slate-50 dark:bg-slate-700/50">
-                            <span>ESP32 / ESP32-S3 / Arduino</span>
+                            <span>ESP32 / Raspberry Pi / Arduino</span>
                             <span class="text-emerald-600 dark:text-emerald-400 font-bold">Tingkat Ahli</span>
                         </div>
                         <div class="flex justify-between items-center p-2 rounded-lg bg-slate-50 dark:bg-slate-700/50">
@@ -799,11 +799,11 @@
                         </div>
                         <div class="flex justify-between items-center p-2 rounded-lg bg-slate-50 dark:bg-slate-700/50">
                             <span>YOLOv8 & Edge Impulse KWS</span>
-                            <span class="text-indigo-600 dark:text-indigo-400 font-bold">Penerapan Praktis</span>
+                            <span class="text-indigo-600 dark:text-indigo-400 font-bold">Menguasai</span>
                         </div>
                         <div class="flex justify-between items-center p-2 rounded-lg bg-slate-50 dark:bg-slate-700/50">
                             <span>C# / Visual Basic 6.0 / Windows Forms</span>
-                            <span class="text-indigo-600 dark:text-indigo-400 font-bold">Menguasai</span>
+                            <span class="text-indigo-600 dark:text-indigo-400 font-bold">Sangat Menguasai</span>
                         </div>
                         <div class="flex justify-between items-center p-2 rounded-lg bg-slate-50 dark:bg-slate-700/50">
                             <span>Pemrograman PLC & Fusion 360</span>
@@ -842,7 +842,7 @@
                 <div class="lg:col-span-5 space-y-6">
                     <h4 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Terbuka untuk Peluang Kerja & Kolaborasi Teknis</h4>
                     <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-                        Apakah Anda sedang mencari *Embedded Systems Engineer*, *Robotics Motion Specialist*, atau *Automation Developer*? Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.
+                        Apakah Anda sedang mencari Embedded Systems Engineer, Robotics Motion Specialist, atau Automation Developer? Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.
                     </p>
 
                     <!-- Contact Card 1 -->
@@ -874,22 +874,26 @@
                         </div>
                         <div>
                             <div class="text-xs text-slate-500 dark:text-slate-400 font-semibold">Domisili Utama</div>
-                            <div class="text-sm font-bold text-slate-900 dark:text-white">Surabaya & Candipuro, Lumajang, Jawa Timur</div>
+                            <div class="text-sm font-bold text-slate-900 dark:text-white">Gebang Kidul No. 87, Sukolilo, Surabaya, Jawa Timur</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Interactive Contact Form -->
                 <div class="lg:col-span-7">
-                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+                    <form id="contactForm" action="https://formsubmit.co/qrt.yuni@gmail.com" method="POST" onsubmit="handleFormSubmit(event)" class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+                        <input type="hidden" name="_subject" id="emailSubject">
+                        <input type="hidden" name="_replyto" id="emailReplyTo">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_template" value="table">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Nama Lengkap</label>
-                                <input type="text" id="name" required placeholder="Nama Anda / Perusahaan" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition">
+                                <input type="text" id="name" name="name" required placeholder="Nama Anda / Perusahaan" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition">
                             </div>
                             <div>
                                 <label for="email" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Alamat Email</label>
-                                <input type="email" id="email" required placeholder="email@perusahaan.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition">
+                                <input type="email" id="email" name="email" required placeholder="email@perusahaan.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition">
                             </div>
                         </div>
 
@@ -900,7 +904,7 @@
 
                         <div>
                             <label for="message" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Isi Pesan</label>
-                            <textarea id="message" rows="5" required placeholder="Tuliskan pesan atau penawaran kerja sama Anda di sini..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition"></textarea>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tuliskan pesan atau penawaran kerja sama Anda di sini..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition"></textarea>
                         </div>
 
                         <button type="submit" class="w-full py-3.5 px-6 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg shadow-emerald-600/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
@@ -1155,10 +1159,37 @@
         }
 
         // Contact Form Handling
-        function handleFormSubmit(event) {
+        async function handleFormSubmit(event) {
             event.preventDefault();
-            document.getElementById('successModal').classList.remove('hidden');
-            document.getElementById('contactForm').reset();
+
+            const form = event.target;
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+
+            document.getElementById('emailSubject').value = document.getElementById('subject').value;
+            document.getElementById('emailReplyTo').value = document.getElementById('email').value;
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-sm"></i><span>Mengirim...</span>';
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { Accept: 'application/json' }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Gagal mengirim pesan');
+                }
+
+                document.getElementById('successModal').classList.remove('hidden');
+                form.reset();
+            } catch (error) {
+                alert('Pesan belum berhasil dikirim. Silakan coba lagi beberapa saat.');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+            }
         }
 
         function closeSuccessModal() {
